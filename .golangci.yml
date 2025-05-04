@@ -1,0 +1,30 @@
+run:
+  timeout: 1m
+  concurrency: 8
+
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - govet
+    - staticcheck
+    - gosec
+    - revive
+
+issues:
+  exclude-dirs:
+    - tests
+  exclude-files:
+    - _test.go
+  max-issues-per-linter: 10
+  max-same-issues: 3
+
+linters-settings:
+  errcheck:
+    check-blank: true
+  revive:
+    severity: warning
+  gosec:
+    severity: "high"
+    confidence: 0.8
+version: 2
