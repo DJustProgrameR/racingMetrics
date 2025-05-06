@@ -2,8 +2,7 @@
 
 ## Запуск 
 ```
-в ./cmd
-go run main.go ../sunny_5_skiers/config.json ../sunny_5_skiers/events
+go run cmd/main.go sunny_5_skiers/config.json sunny_5_skiers/events
 ```
 
 ### Вопрос ответ
