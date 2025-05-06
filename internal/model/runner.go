@@ -1,4 +1,3 @@
-// Package model is a container for domain models
 package model
 
 import (
